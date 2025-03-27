@@ -1,6 +1,6 @@
 ---
 - hosts: ws
-  become: 1 #root user
+  become: 1 #root user Hello:D
   gather_facts: 1
   ignore_errors: True
   vars:
