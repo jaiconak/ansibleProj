@@ -13,9 +13,7 @@ pipeline {
 
         stage ('Upload to JFrog') {
             steps {
-                sh 'curl -uadmin:cmVmdGtuOjAxOjE3NzQ1NTQ0Njk6aExBRndubnFvV0tFNWUzNzhQU0dkWnVVaTg0 -T \
-                ansible-${BUILD_NUMBER}.zip\
-                "http://35.175.216.14:8081/artifactory/ansible/ansible-${BUILD_NUMBER}.zip"'
+                sh 'curl -uadmin:cmVmdGtuOjAxOjE3NzQ1NzM1NDM6UGVQRVpRMzFmOUczNDFTR042VHB3NFBTTHox -T <PATH_TO_FILE> "http://18.215.124.40:8081/artifactory/ansible/<TARGET_FILE_PATH>"'
             }
         }
 
