@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'zip -r ansible-${BUILD_NUMBER}.zip * --exclude=Jenkinsfile'
                 sh 'ls -l'
-                sh 'echo "testing!"'
+                sh 'echo "testing"'
             }
         }
 
